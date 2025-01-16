@@ -37,13 +37,13 @@
     <div class="btn-container">
       <button id="learn-more-btn" class="btn btn-primary">Learn More</button>
       <button id="join-us-btn" class="btn btn-primary">Join Us</button>
-    </div>    
+    </div>
   </div>
 
 
   <!-- About Section -->
   <section id="about" class="interactive-section">
-    <h2 >About Us</h2>
+    <h2>About Us</h2>
     <p>Hover or click to learn more about us!</p>
     <div id="about-card" class="card hidden">
       <button id="close-card" class="close-btn">&times;</button>
@@ -103,40 +103,49 @@
   <!-- Newsletter Section -->
 
   <section id="newsletter">
-    <h2 >Newsletter</h2>
+    <h2>Newsletter</h2>
     <p>Stay updated with our latest news and events by checking out our monthly newsletters.</p>
     <div class="btn-container">
       <button class="btn btn-primary" id="download-newsletter-btn">Download This Month's Newsletter</button>
-      <button class="btn btn-secondary" id="view-archive-btn" style="background-color: #3D3C3C; border: none; color: white; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer;">View All Newsletters</button>
+      <button class="btn btn-secondary" id="view-archive-btn"
+        style="background-color: #3D3C3C; border: none; color: white; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer;">View
+        All Newsletters</button>
     </div>
-  </section>  
+  </section>
 
   <!-- Events Section -->
   <section id="events">
-    <h2 >Events</h2>
+    <h2>Events</h2>
     <p>Join us in our upcoming events that bring innovation, collaboration, and creativity together. Be part of
       something transformative!</p>
     <button class="btn">Explore Events(Coming SOON)</button>
   </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2 >Projects</h2>
-      <p>Discover the innovative projects we’ve built, showcasing creativity and technical expertise. Click below to learn more!</p>
-      <button class="btn btn-primary" onclick="window.location.href='projects.html'">Explore Projects</button>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Discover the innovative projects we’ve built, showcasing creativity and technical expertise. Click below to learn
+      more!</p>
+    <button class="btn btn-primary" onclick="window.location.href='projects.html'">Explore Projects</button>
+  </section>
 
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Us</h2>
-      <p>Email us: <a href="mailto:navtantraofficial@gmail.com">navtantraofficial@gmail.com</a></p>
-      <p>Join our community on WhatsApp: <a href="https://wa.me/1234567890" target="_blank">Join Here</a></p>
+    <p>Email us: <a href="mailto:navtantraofficial@gmail.com">navtantraofficial@gmail.com</a></p>
+    <p>Join our community on WhatsApp: <a href="https://wa.me/1234567890" target="_blank">Join Here</a></p>
   </section>
 
   <!-- Footer Section -->
   <footer>
-    <p>© 2025 Ishan Jaiswal. All rights reserved.</p>
+    <p>© <span id="year"></span> <a href="https://www.linkedin.com/in/ishan-jaiswal-2a799a30a/" target="_blank"
+        rel="noopener noreferrer">Ishan Jaiswal</a>. All rights reserved.</p>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="scripts.js"></script>
