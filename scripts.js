@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Dropdown menu toggle
+  const dropdownButton = document.querySelector('.dropdown button');
+  const dropdownContent = document.querySelector('.dropdown-content');
+
+  dropdownButton.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent clicks from propagating to the document
+    dropdownContent.classList.toggle('show'); // Toggle the 'show' class
+  });
+
+  // Close the dropdown if the user clicks outside of it
+  document.addEventListener('click', () => {
+    if (dropdownContent.classList.contains('show')) {
+      dropdownContent.classList.remove('show');
+    }
+  });
+
+  // About Us card functionality
   const aboutSection = document.getElementById('about');
   const aboutCard = document.getElementById('about-card');
   const closeCard = document.getElementById('close-card');
@@ -26,5 +43,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // Redirect Join Us button to the specified Google Form
   joinUsBtn.addEventListener('click', () => {
     window.open('https://forms.gle/WWyZZgLvxLTXVN1P8', '_blank');
+  });
+
+  // Newsletter button functionality
+  const downloadNewsletterBtn = document.getElementById('download-newsletter-btn');
+  const viewArchiveBtn = document.getElementById('view-archive-btn');
+
+  // Open this month's newsletter
+  downloadNewsletterBtn.addEventListener('click', () => {
+    // Replace 'path-to-this-months-newsletter.pdf' with the actual file path
+    window.open('newsletter/2025/Newsletter-January-2025.pdf', '_blank');
+  });
+
+  // Redirect to the newsletter archive page
+  viewArchiveBtn.addEventListener('click', () => {
+    window.location.href = 'newsletter.html';
   });
 });
