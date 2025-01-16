@@ -10,7 +10,6 @@ body {
   line-height: 1.6;
   color: #fff;
   background: #1A2238;
-  /* Black-blueish shade for the main background */
 }
 
 /* Header Styles */
@@ -31,7 +30,6 @@ header {
 
 .dropdown button {
   background-color: #333;
-  /* Dark gray to complement black */
   color: white;
   border: none;
 }
@@ -45,9 +43,7 @@ header {
   display: none;
   position: absolute;
   background-color: #292B35;
-  /* Match the top bar */
   border: 1px solid #333;
-  /* Subtle border for distinction */
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -66,7 +62,6 @@ header {
 
 .dropdown-content a:hover {
   background-color: #333;
-  /* Slightly lighter black on hover */
 }
 
 .dropdown:hover .dropdown-content {
@@ -80,7 +75,6 @@ header {
   justify-content: center;
   align-items: center;
   background: linear-gradient(to right, #2b7a3d, #f77f00);
-  /* Green to Orange */
   color: white;
   text-align: center;
   padding: 5rem 2rem;
@@ -91,11 +85,8 @@ header {
 
 .hero .btn-container {
   display: flex;
-  /* Ensures buttons are in the same row */
   gap: 1rem;
-  /* Adds spacing between buttons */
   justify-content: center;
-  /* Centers the buttons horizontally */
   margin-top: 1rem;
 }
 
@@ -111,24 +102,19 @@ header {
 
 .hero .btn {
   margin: 1rem 0.5rem;
-  /* Add spacing between buttons */
 }
 
 .btn {
   font-weight: bold;
   transition: background 0.3s ease;
   padding: 0.8rem 1.5rem;
-  /* Button padding for uniformity */
   font-size: 1rem;
-  /* Slightly increase font size */
   border-radius: 5px;
-  /* Rounded corners for buttons */
   cursor: pointer;
 }
 
 .btn-primary {
   background-color: #f77f00;
-  /* Orange button */
   border: none;
 }
 
@@ -139,16 +125,11 @@ header {
 /* Section Container Styles */
 section {
   display: flex;
-  /* Enable Flexbox */
   flex-direction: column;
-  /* Stack content vertically */
   align-items: center;
-  /* Horizontally center */
   justify-content: center;
-  /* Vertically center */
   padding: 3rem;
   background: rgba(0, 0, 0, 0.5);
-  /* Semi-transparent black */
   border-radius: 8px;
   margin: 2rem auto;
   width: 90%;
@@ -171,7 +152,7 @@ h2.section-title {
   align-items: center;
   justify-content: center;
   padding: 3rem;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   margin: 2rem auto;
   width: 90%;
@@ -195,7 +176,7 @@ h2.section-title {
 
 /* Contact Card */
 #contact-card {
-  background: #292B35; /* Sleek black */
+  background: #292B35;
   color: white;
   padding: 2rem;
   border-radius: 8px;
@@ -249,8 +230,8 @@ h2.section-title {
 }
 
 #about-card {
-  background: #fff; /* White background for readability */
-  color: #333; /* Dark text for contrast */
+  background: #fff; 
+  color: #333; 
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -265,9 +246,7 @@ h2.section-title {
 
 #about:hover {
   background: linear-gradient(135deg, #1A2238, #f77f00);
-  /* Change gradient on hover */
   transform: scale(1.02);
-  /* Slightly enlarge */
   transition: all 0.3s ease;
 }
 
