@@ -107,8 +107,11 @@
     <div class="btn-container">
       <button class="btn btn-primary" id="download-newsletter-btn">Download This Month's Newsletter</button>
       <button class="btn btn-secondary" id="view-archive-btn"
-        style="background-color: #3D3C3C; border: none; color: white; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer;">View
-        All Newsletters</button>
+      style="background-color: #3D3C3C; border: none; color: white; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease, color 0.3s ease;"
+      onmouseover="this.style.backgroundColor='#575656'; this.style.color='#E0E0E0';"
+      onmouseout="this.style.backgroundColor='#3D3C3C'; this.style.color='white';">
+      View All Newsletters
+    </button>
     </div>
   </section>
 
