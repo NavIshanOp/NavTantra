@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects - NavTantra</title>
+  <title>Codes - NavTantra</title>
   <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -28,22 +28,26 @@
       </div>
     </div>
   </header>
-  
+
   <!-- Main Content Wrapper -->
   <main>
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2 class="section-title">Projects</h2>
-      <p>Explore some of the incredible projects you could work on!</p>
-      <div class="project-list">
-        <div class="project-card">
-          <img src="assets/project1.jpg" alt="Project 1" class="project-image">
-          <h3>DIY Bristlebot</h3>
-          <p>
-            The motor creates vibrations, which make the toothbrush bristles move, causing the bristlebot to "walk"
-            around.
-          </p>
-          <p>More details on our January newsletter.</p>
+    <!-- Newsletters Section -->
+    <section id="newsletters">
+      <h2 class="section-title text-center">Our Codes</h2>
+      <p class="text-center">Follow our tutorial to set up your hardware and prepare before uploading the code.</p>
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- Code 1 -->
+          <div class="col-md-4">
+            <div class="newsletter-card box-shadow p-3 mb-4">
+              <h3>S-CAM - Security Cam Bot</h3>
+              <p>
+                S-CAM records motion events with ESP32 and displays status.
+            </p>
+              <a href="https://github.com/NavIshanOp/S-CAM/blob/main/README.md" target="_blank" class="btn btn-primary">See Code</a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -73,6 +77,46 @@
 
       main {
         flex: 1;
+      }
+
+      /* Add box-shadow and padding to newsletter cards */
+      .newsletter-card {
+        background-color: #f9f9f9;
+        /* Light gray background */
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: 20px;
+        /* Space between cards */
+      }
+
+      .newsletter-card h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #333;
+        /* Darker text color */
+      }
+
+      .newsletter-card p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: #666;
+        /* Lighter text color */
+      }
+
+      .newsletter-card .btn {
+        background-color: #007bff;
+        border: none;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: white;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+
+      .newsletter-card .btn:hover {
+        background-color: #0056b3;
       }
     </style>
     <p>© <span id="year"></span> <a href="https://www.ishandev.top" target="_blank"
