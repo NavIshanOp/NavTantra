@@ -145,6 +145,17 @@ h2.section-title {
   text-align: center;
 }
 
+#aurora-btn {
+  background-color: #292D34;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#aurora-btn:hover {
+  background-color: #3b3450; /* Slightly lighter shade for hover effect */
+  color: #f8f8f8;
+}
+
 /* Contact Us Section */
 #contact {
   display: flex;
