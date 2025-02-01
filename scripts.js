@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeCard = document.getElementById('close-card');
   const learnMoreBtn = document.getElementById('learn-more-btn');
   const joinUsBtn = document.getElementById('join-us-btn');
+  const aurorabtn = document.getElementById('aurora-btn');
 
   // Show the About Us card when the section is clicked
   aboutSection.addEventListener('click', () => {
@@ -43,6 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Redirect Join Us button to the specified Google Form
   joinUsBtn.addEventListener('click', () => {
     window.open('https://forms.gle/WWyZZgLvxLTXVN1P8', '_blank');
+  });
+
+  // Redirect AuroraAI button to the specified Google Form
+  aurorabtn.addEventListener('click', () => {
+    window.open('https://aurora.ishandev.top', '_blank');
   });
 
   // Newsletter button functionality
