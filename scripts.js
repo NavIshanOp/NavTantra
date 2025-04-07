@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Redirect AuroraAI button to the specified Google Form
   aurorabtn.addEventListener('click', () => {
-    window.open('https://aurora.ishandev.top', '_blank');
+    window.open('https://aurora.ishan.vip', '_blank');
   });
 
   // Newsletter button functionality
