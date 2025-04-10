@@ -54,11 +54,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // Newsletter button functionality
   const downloadNewsletterBtn = document.getElementById('download-newsletter-btn');
   const viewArchiveBtn = document.getElementById('view-archive-btn');
+  const eventsnova = document.getElementById('events-nova');
 
   // Open this month's newsletter
   downloadNewsletterBtn.addEventListener('click', () => {
     // Replace 'path-to-this-months-newsletter.pdf' with the actual file path
     window.open('newsletter/2025/Newsletter-February-2025.pdf', '_blank');
+  });
+
+  eventsnova.addEventListener('click', () => {
+    window.open('assets/event1.pdf', '_blank');
   });
 
   // Redirect to the newsletter archive page
