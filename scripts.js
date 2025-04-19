@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Open this month's newsletter
   downloadNewsletterBtn.addEventListener('click', () => {
     // Replace 'path-to-this-months-newsletter.pdf' with the actual file path
-    window.open('newsletter/2025/Newsletter-February-2025.pdf', '_blank');
+    window.open('newsletter/2025/Newsletter-April-2025.pdf', '_blank');
   });
 
   eventsnova.addEventListener('click', () => {
